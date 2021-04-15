@@ -30,6 +30,10 @@ export class RecipeService{
         return this.recipes.slice(); // returns a copy to not modify the underlying reference
     }
 
+    getRecipe(index: number) {
+        return this.recipes[index];
+    }
+
     addIngredients(ingredients: Ingredient[]){
         this.slService.addIngredients(ingredients);
     }
